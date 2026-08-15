@@ -1,0 +1,77 @@
+# MetricMind
+
+MetricMind is an agentic semantic BI platform that lets executives ask natural-language questions about business data through a semantic layer instead of generating SQL directly.
+
+## Features
+
+- Executive chat experience for business questions
+- Semantic-layer-first query orchestration via Cube.dev REST API
+- LLM explanation and chart generation
+- Metrics, dimensions, and history endpoints
+- Docker-based local deployment
+
+## Tech Stack
+
+- Frontend: Next.js 15, TypeScript, Tailwind CSS, Tremor, Apache ECharts, shadcn/ui
+- Backend: FastAPI, LangChain, Llama 3-compatible LLM
+- Semantic layer: Cube.dev REST API
+- Vector store: ChromaDB
+- Warehouse: Snowflake (mock-ready)
+
+## Run with Docker
+
+```bash
+docker compose up --build
+```
+
+Then open:
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8000/docs
+
+## Run Locally
+
+### Backend
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Environment Variables
+
+Set the following variables before running:
+
+```bash
+OPENAI_API_KEY=
+LLM_ENDPOINT=
+CUBE_API_URL=
+CUBE_API_TOKEN=
+SNOWFLAKE_ACCOUNT=
+SNOWFLAKE_USER=
+SNOWFLAKE_PASSWORD=
+CHROMA_PATH=
+```
+
+## Security Notes
+
+- Never expose API keys in the frontend.
+- The backend validates requests and never executes arbitrary SQL.
+- Semantic-layer requests are the only data access path.
+
+## Future Enhancements
+
+- Authentication and RBAC
+- Streaming responses
+- Forecasting and root cause analysis
+- Voice queries
