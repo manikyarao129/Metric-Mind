@@ -79,3 +79,5 @@ export default function ChatPage() {
     </div>
   );
 }
+
+// AI chat interface for Metric Mind
