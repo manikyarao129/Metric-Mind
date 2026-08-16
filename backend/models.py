@@ -19,3 +19,5 @@ class ChatResponse(BaseModel):
     insights: List[str] = []
     reasoning: List[str] = []
     semantic_payload: Optional[dict] = None
+
+# Data models used by Metric Mind
