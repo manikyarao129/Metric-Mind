@@ -60,3 +60,5 @@ export default function PieChart({ title, data }: PieChartProps) {
 
   return <ReactECharts option={option} style={{ height: 300 }} />;
 }
+
+// Pie chart visualization
