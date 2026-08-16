@@ -60,3 +60,5 @@ export default function BarChart({ title, categories, data, color = '#3b82f6' }:
 
   return <ReactECharts option={option} style={{ height: 300 }} />;
 }
+
+// Bar chart visualization
