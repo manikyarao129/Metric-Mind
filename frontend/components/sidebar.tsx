@@ -43,3 +43,5 @@ export default function Sidebar() {
     </aside>
   );
 }
+
+// Main navigation sidebar for Metric Mind
