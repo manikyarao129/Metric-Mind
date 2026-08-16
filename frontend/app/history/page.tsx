@@ -22,3 +22,5 @@ export default function HistoryPage() {
     </div>
   );
 }
+
+// Historical metric activity view
