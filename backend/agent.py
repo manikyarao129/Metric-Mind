@@ -98,3 +98,5 @@ class MetricMindAgent:
             "x": [row.get("Region") for row in data],
             "series": [{"name": "Value", "data": [row.get("Margin", row.get("Revenue", 0)) for row in data]}],
         }
+
+# Metric Mind AI agent
