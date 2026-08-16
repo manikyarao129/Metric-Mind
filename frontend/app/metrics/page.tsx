@@ -181,3 +181,5 @@ export default function MetricsPage() {
     </div>
   );
 }
+
+// Metrics page for managing project metrics
