@@ -77,3 +77,5 @@ export default function AreaChart({ title, xAxisData, series }: AreaChartProps) 
 
   return <ReactECharts option={option} style={{ height: 300 }} />;
 }
+
+// Area chart visualization
