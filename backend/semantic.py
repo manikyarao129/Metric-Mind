@@ -56,3 +56,5 @@ async def run_query(metric: str, dimensions: Optional[List[str]] = None, filters
                 ]
             },
         }
+
+# Semantic metric processing utilities
