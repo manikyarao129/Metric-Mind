@@ -168,3 +168,6 @@ Components require:
 - `react` (^18.3.0)
 
 These are already configured in `package.json`.
+
+## Dashboard Charts
+Charts provide visual summaries of Metric Mind analytics.
